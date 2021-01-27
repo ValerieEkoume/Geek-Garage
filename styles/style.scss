@@ -1,0 +1,230 @@
+$backgroundcolor : #ffdf91;
+$textColor : #550a46;
+$fonth2 : 'Space Mono', monospace;
+
+body, html {
+  height: 100%;
+  background-color: #ffdf91;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  font-family: 'Space Mono', monospace;
+  color: #ffdf91;
+}
+
+
+main {
+
+}
+
+.landing {
+  min-height: 95vh;
+  background: #d1c145;
+  background-size: cover;
+  padding: 0 5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  padding-left: 10rem;
+  font-size: 2rem;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffdf91;
+  font-family: 'Concert One', cursive;
+
+}
+button {
+  border: 3px solid #470938 ;
+  background-color: #ffdf91;
+  padding: 12px 10px;
+  border-radius: 12px;
+  font-family: 'Concert One', cursive;
+  color: #470938;
+}
+
+.tamps {
+  position: absolute;
+  margin: 30% 70%;
+  width: 20%;
+
+}
+
+main {
+  background-color: $backgroundcolor;
+}
+
+.services h2 {
+  text-align: center;
+  margin-top: 3%;
+  color: $textColor;
+  font-family: $fonth2;
+
+}
+
+.services .container{
+  display: inline;
+  //vertical-align: center;
+  //padding: 10px;
+  margin-left: 17%;
+  margin-top: 10%;
+
+}
+
+.services .logiciel {
+  width: 14%;
+
+}
+
+.services .phone {
+  width: 30%;
+
+}
+
+.services .maint {
+  width: 28%;
+}
+
+.services p {
+  font-size: 1.5rem;
+  margin: 30px 50px;
+  text-align: center;
+  color: #470938;
+}
+
+.text-ser{
+  text-align: center;
+
+}
+
+
+
+.text-centre {
+  text-align: center;
+  margin-top: 10%;
+  padding: 2%;
+  font-family: $fonth2;
+  color: $textColor;
+
+}
+
+#maCarte {
+  height: 500px;
+  width: 700px;
+  border: 2px solid black;
+  margin-left: 32%;
+  margin-bottom: 20px;
+
+}
+
+.centre .container img {
+  width: 30%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+
+
+}
+
+.happy {
+  width: 30%;
+
+}
+
+.geek {
+  width: 30%;
+}
+
+
+
+.contactgeek img{
+  //justify-content: center;
+  margin-right: 100%;
+  width: 50px;
+}
+
+.contact #container {
+  //margin-top: 25%;
+  padding: 0 30%;
+
+
+}
+
+.contact input {
+  border: solid #ffdf91;
+}
+
+.contact  textarea {
+  border: solid #ffdf91;
+}
+
+
+.contact h2 {
+  font-family: $fonth2;
+  color: $textColor;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+
+.contact input {
+
+}
+
+footer {
+  background-color: #ffdf91;
+}
+ footer .container {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+    margin-top: 20px;
+
+
+}
+
+ footer i {
+
+   width: 30%;
+ }
+
+ footer a {
+   color: #f88f01;
+   padding: 10px 3px;
+   top: 10px;
+ }
+
+ footer p{
+   text-align: center;
+   font-size: 10px;
+   color: #f88f01;
+   padding-bottom: 10px;
+ }
+
+footer h5{
+
+  font-size: 10px;
+  color: #f88f01;
+}
