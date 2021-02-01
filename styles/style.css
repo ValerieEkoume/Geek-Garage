@@ -1,6 +1,93 @@
+@charset "UTF-8";
+.header .contact-geek {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+  margin-bottom: 2%;
+}
+
+.form {
+  padding: 0 30%;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #ffdf91;
+}
+
+#msg {
+  margin-top: 40px;
+}
+
+::-webkit-input-placeholder {
+  color: #550a46;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+button {
+  padding: 20px 32px;
+  font-size: 16px;
+  background: #ffdf91;
+  border: none;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.inner-footer {
+  margin: 0;
+  padding: 0;
+  background-color: #ffdf91;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links ul {
+  display: flex;
+  padding: 10px;
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+.social-items {
+  list-style: none;
+}
+
+.social-items a {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #550a46;
+}
+
+.social-items a:hover {
+  color: #b49c73;
+}
+
+.outer-footer {
+  padding: 20px;
+  text-align: center;
+  color: #b49c73;
+  font-size: 18px;
+  background-color: #ffdf91;
+}
+
 body, html {
   height: 100%;
-  background-color: #ffdf91;
+  background-color: #b49c73;
 }
 
 * {
@@ -9,74 +96,131 @@ body, html {
   box-sizing: border-box;
 }
 
-#logo {
-  font-family: "Space Mono", monospace;
-  color: #ffdf91;
+.front {
+  width: 200vm;
+  height: 100vh;
+  background: url("../img/pexels-miguel-á-padriñán-3930094 (1).jpg");
+  justify-content: center;
 }
 
-.landing {
-  min-height: 95vh;
-  background: #d1c145;
-  background-size: cover;
-  padding: 0 5rem;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 10vh;
-}
-
-.nav-links {
-  display: flex;
+li {
   list-style: none;
+  transition: all 0.4s;
 }
 
-.nav-links li {
-  padding-left: 10rem;
-  font-size: 2rem;
+li:hover {
+  transform: scale(1.1);
 }
 
-.nav-links a {
+a {
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffdf91;
   font-family: "Concert One", cursive;
 }
 
-button {
-  border: 3px solid #470938;
-  background-color: #ffdf91;
-  padding: 12px 10px;
-  border-radius: 12px;
-  font-family: "Concert One", cursive;
-  color: #470938;
+a:hover {
+  color: #550a46;
 }
 
-.tamps {
-  position: absolute;
-  margin: 30% 70%;
-  width: 20%;
-}
-
-main {
-  background-color: #ffdf91;
-}
-
-.services h2 {
-  text-align: center;
-  margin-top: 3%;
+h2 {
   color: #550a46;
   font-family: "Space Mono", monospace;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 5%;
 }
 
-.services .container {
+h3 {
+  font-size: 40px;
+  color: #550a46;
+  font-family: "Pacifico", cursive;
+  font-weight: lighter;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 5%;
+  color: #470938;
+  font-family: "Concert One", cursive;
+  padding: 0 30px;
+}
+
+.btn {
+  margin-top: 3%;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #ffdf91;
+  letter-spacing: 5px;
+}
+
+.btn:hover {
+  transform: scale(0.97);
+  background-color: #f6f4e6;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  border: 2px solid #ffdf91;
+  padding: 0 5px;
+  align-items: center;
+  font-size: 1.7em;
+}
+
+.main-nav {
+  position: fixed;
+  display: flex;
+  padding: 2em 4em;
+}
+
+.main-nav .ul_second {
+  position: fixed;
+  display: flex;
+  right: 2em;
+}
+
+.main-nav .ul_second li {
+  margin-left: 1.5em;
+  font-size: 1.5em;
+}
+
+.main-nav .ul_second #border {
+  border: 2px solid #ffdf91;
+  padding: 0 15px;
+  align-items: center;
+}
+
+.container .home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8em;
+  margin-bottom: 5%;
+}
+
+.container .home .image {
+  width: 400px;
+  height: 600px;
+}
+
+.content {
+  margin-top: 50px;
+  margin-right: 100px;
+  text-align: center;
+  z-index: 10;
+}
+
+.third--image {
   display: inline;
   margin-left: 17%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
-.services .logiciel {
+.third--image .logiciel {
   width: 14%;
 }
 
@@ -88,15 +232,16 @@ main {
   width: 28%;
 }
 
-.services p {
-  font-size: 1.5rem;
-  margin: 30px 50px;
-  text-align: center;
-  color: #470938;
+.happy {
+  width: 30%;
 }
 
-.text-ser {
-  text-align: center;
+.geek {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 50%;
 }
 
 .text-centre {
@@ -108,85 +253,12 @@ main {
 }
 
 #maCarte {
+  display: block;
   height: 500px;
   width: 700px;
   border: 2px solid black;
-  margin-left: 32%;
-  margin-bottom: 20px;
-}
-
-.centre .container img {
-  width: 30%;
-  margin-left: 15%;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-
-.happy {
-  width: 30%;
-}
-
-.geek {
-  width: 30%;
-}
-
-.contactgeek img {
-  margin-right: 100%;
-  width: 50px;
-}
-
-.contact #container {
-  padding: 0 30%;
-}
-
-.contact input {
-  border: solid #ffdf91;
-}
-
-.contact textarea {
-  border: solid #ffdf91;
-}
-
-.contact h2 {
-  font-family: "Space Mono", monospace;
-  color: #550a46;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 10%;
-}
-
-footer {
-  background-color: #ffdf91;
-}
-
-footer .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-top: 20px;
-}
-
-footer i {
-  width: 30%;
-}
-
-footer a {
-  color: #f88f01;
-  padding: 10px 3px;
-  top: 10px;
-}
-
-footer p {
-  text-align: center;
-  font-size: 10px;
-  color: #f88f01;
-  padding-bottom: 10px;
-}
-
-footer h5 {
-  font-size: 10px;
-  color: #f88f01;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

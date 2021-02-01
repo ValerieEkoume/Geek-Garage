@@ -54,57 +54,5 @@ carte.addLayer(marqueurs);
 
 
 
-/*L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoidmFsMnZhbCIsImEiOiJja2tmOTVpbXMxOHJyMnVvY2xjaGY0cTU2In0.EZkH23gR3k17JhVpdXfNlw'
-}).addTo(maCarte);
-console.log(villes);
-for (ville in villes) {
-    var marker = L.marker([villes[ville].lat, ville[ville].lon]).addTo(maCarte);
-    //marker.binPopup("<p>Gray</p>")
 
-}*/
-
-
-
-//var marker = L.marker([47.756, 6.155]).addTo(maCarte);
-
-
-
-
-
-
-
-
-// Nous initialisons une liste de marqueurs
-
-/*function init() {
-
-    const hauteSaone = {
-        lat: 47.756981,
-        lng: 47.756981,
-        maCarte: null
-    }
-
-    const zoomlevel = 7;
-    const map = L.map('maCarte').setView([hauteSaone.lat, hauteSaone.lng], zoomlevel);
-
-    const mainLayer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoidmFsMnZhbCIsImEiOiJja2tmOTVpbXMxOHJyMnVvY2xjaGY0cTU2In0.EZkH23gR3k17JhVpdXfNlw'
-    });
-
-    mainLayer.addTo(map);
-
-}
-
-init();*/
 

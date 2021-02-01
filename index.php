@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initiale-scale=1">
         <meta http-equiv="X-UA-compatible" content="ie=edge">
-        <link rel="icon" href="img/istockphoto-666003324-612x612.jpg">
+        <link rel="icon" href="img/pexels-miguel-á-padriñán-3930094%20(1).jpg">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
               crossorigin="anonymous">
@@ -23,93 +23,138 @@
     </head>
 
     <body >
-    <main>
-        <section class="landing">
-            <nav>
-                <h1 id="logo">GEEK GARAGE</h1>
 
-                <ul class="nav-links">
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">NOS CENTRES</a></li>
-                    <li><a href="">CONTACT</a></li>
+        <div class="main-container">
+            <section class="front">
+            <nav class="main-nav">
+                <ul class="ul_first">
+                    <li id="logo">
+                        <a href="#">GG</a>
+                    </li>
+
                 </ul>
-                    <a class="cta" href="#"><button>Contact</button></a>
+
+                <ul class="ul_second">
+                    <li id="border"><a href="#services">GEEK-SERVICES</a></li>
+                    <li><a href="#centres">GEEK-CENTRES</a></li>
+                    <li><a href="#contact">GEEK-CONTACT</a></li>
+                </ul>
+                    <!--a class="cta" href="#"><button>Contact</button></a>-->
+
             </nav>
 
-            <img class="tamps" src="img/logo.png" alt="">
+            <!--img class="tamps" src="img/logo.png" alt=""-->
 
-        </section>
-        <div class="corps">
-            <section class="services">
-                <h2>NOS SERVICES</h2>
-                    <div class="container">
-                        <img class="logiciel" src="img/logiciel.png" alt="">
-                        <img class="phone" src="img/phone_vintage.png" alt="">
-                        <img class="maint" src="img/maintenance.png" alt="">
+            <div class="container">
+                    <div class="bien">
+                <section id="home" class="home">
+
+                    <div class="image">
+                        <!--img src="img/robot.jpg" alt=""-->
                     </div>
 
-                <p>Vous rencontrez des difficultés à gérer votre ordinateur ? Vous êtes au
-                bon endroit ! Geek Garage effectue vos installations de logiciels, de la
-                maintenance préventive et ou curative sur vos appareils</p>
+                    <div class="content">
+                        <h3>Bienvenue sur</h3>
+                        <h2>GEEK GARAGE</h2>
+                        <p>
+                            Pour tous les petis bobos de votre matériel informatique
+                        </p>
 
-                <h2 class="text-ser">NOUS SOMMES A VOTRE ECOUTE<br>
-                CONTACTEZ-NOUS</h2>
-            </section>
+                        <a href="#contact" class="btn">Contactez-nous</a>
+                    </div>
+                    </div>
+                </section>
 
-            <section class="centre">
-                <h2 class="text-centre">TROUVEZ VOTRE CENTRE GEEK GARAGE</h2>
+                <section id="services" class="services">
 
-                <div id="maCarte">
+                    <h2>GEEK-SERVICES</h2>
+                   <div class="image third--image">
+                       <img class="logiciel" src="img/logiciel.png" alt="">
+                       <img class="phone" src="img/phone_vintage.png" alt="">
+                       <img class="maint" src="img/maintenance.png" alt="">
+                   </div>
 
+                    <div class="content">
 
-                </div>
+                           <p>Vous rencontrez des difficultés à gérer votre ordinateur ? Vous êtes au
+                           bon endroit ! <br> Geek Garage effectue vos installations de logiciels, de la
+                           maintenance préventive et ou curative sur vos appareils.<br> Nous sommes à votre
+                           écoute.</p>
+
+                           <a href="#contact" class="btn">Contactez-nous</a>
+                    </div>
+
+                </section>
 
                 <!-- photos du centre -->
 
-                <div class="container">
+                <section id="centres" class="centres">
 
-                    <img class="happy" src="img/Happy_people.jpg" alt="">
-                    <img class="geek" src="img/geek.jpg" alt="">
+                    <div class="container">
+                        <!--img class="happy" src="img/Happy_people.jpg" alt=""-->
+                        <img class="geek" src="img/geek.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h2 class="text-centre">GEEK-CENTRE</h2>
+                    </div>
+
+                    <div id="maCarte"></div>
+                    <div class="content">
+
+                        <p>Vous rencontrez des difficultés à gérer votre ordinateur ? Vous êtes au
+                            bon endroit ! <br> Geek Garage effectue vos installations de logiciels, de la
+                            maintenance préventive et ou curative sur vos appareils.<br> Nous sommes à votre
+                            écoute.</p>
+
+                    </div>
+
+                </section>
 
                 </div>
 
-            </section>
-            <section class="contact">
-                <h2>CONTACTEZ-NOUS</h2>
 
-                <div id="container">
+            <div class="header">
+                    <h2>GEEK-CONTACT</h2>
+                <img class="contact-geek" src="img/contact-garage.png" alt="">
+                    <P>
+                       Pour prendre rendez-vous n'hésitez pas à nous envoyer un message <br>
 
-                <div class="mb-3">
-
-                    <input type="text" class="form-control" id="name" placeholder="Nom">
+                    </P>
+        <section id="contact" class="contact">
+                <div class="form">
+                    <form action="#">
+                    <input type="text" placeholder="Nom" />
+                    <input type="text" placeholder="Email" />
+                    <input type="email" id="msg" placeholder="Dites-nous tout..." />
+                        <button type="button">Envoyez</button>
+                    </form>
                 </div>
-                <div class="mb-3">
+        </section>
 
-                    <input type="email" class="form-control" id="email" placeholder="nom@exemple.com">
+
+
+
+
+    </body>
+
+    <footer class="footer">
+
+            <div class="inner-footer">
+                <div class="social-links">
+                    <ul>
+                        <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="social-items"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="social-items"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
                 </div>
-                <div class="mb-3">
-
-                    <textarea class="form-control" id="message" placeholder="Dites-nous tout..." rows="5"></textarea>
-                </div>
-                    <img class="contactgeek" src="img/contact-garage.png" alt="">
-            </section>
-        </div>
-
-    </main>
-
-</body>
-
-    <footer class="bottom">
-
-            <div class="container">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
 
             </div>
+        <div class="outer-footer">
 
-        <p>All Right reserved by &copy;V-DesiGn.2021</p>
+        All Right reserved by &copy;V-DesiGn.2021
+        </div>
     </footer>
     <!--Fichiers Js -->
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>

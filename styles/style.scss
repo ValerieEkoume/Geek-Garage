@@ -1,97 +1,178 @@
-$backgroundcolor : #ffdf91;
-$textColor : #550a46;
-$fonth2 : 'Space Mono', monospace;
+@import "variables";
+@import "form";
+@import "footer";
 
 body, html {
   height: 100%;
-  background-color: #ffdf91;
+  background-color: $backgroundcolor;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
+
+.front {
+  width: 200vm;
+  height: 100vh;
+  background: url("../img/pexels-miguel-á-padriñán-3930094 (1).jpg");
+  justify-content: center;
+}
+
+
+
+li {
+  list-style: none;
+  transition: all 0.4s;
+}
+
+li:hover {
+  transform: scale(1.1);
+
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffdf91;
+  font-family: 'Concert One', cursive;
+
+}
+
+a:hover {
+  color: $textColor;
+}
+
+
+ h2 {
+   color: $textColor;
+   font-family: $fonth2;
+   letter-spacing: 10px;
+   text-align: center;
+   margin-top: 5%;
+
+}
+
+h3 {
+  font-size: 40px;
+  color: $textColor;
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+
+}
+
+p {
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 5%;
+  color: #470938;
+  font-family: 'Concert One', cursive;
+  padding: 0 30px;
+}
+
+.btn {
+  margin-top: 3%;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #ffdf91;
+  letter-spacing: 5px;
+}
+
+.btn:hover{
+  transform: scale(0.97);
+  background-color: #f6f4e6;
+}
+
+img {
+  width: 100%;
+}
+
+
 
 #logo {
-  font-family: 'Space Mono', monospace;
-  color: #ffdf91;
-}
-
-
-main {
-
-}
-
-.landing {
-  min-height: 95vh;
-  background: #d1c145;
-  background-size: cover;
-  padding: 0 5rem;
-}
-
-nav {
-  display: flex;
+  border: 2px solid #ffdf91;
+  padding: 0 5px;
   align-items: center;
-  justify-content: space-between;
-  min-height: 10vh;
+  font-size: 1.7em;
 }
 
-.nav-links {
+.main-container {
+ // width: 100vw;
+  //height: 100vw;
+}
+
+
+
+.main-nav {
+  position: fixed;
   display: flex;
-  list-style: none;
-}
-
-.nav-links li {
-  padding-left: 10rem;
-  font-size: 2rem;
+  padding: 2em 4em;
 
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #ffdf91;
-  font-family: 'Concert One', cursive;
+.home {}
 
-}
-button {
-  border: 3px solid #470938 ;
-  background-color: #ffdf91;
-  padding: 12px 10px;
-  border-radius: 12px;
-  font-family: 'Concert One', cursive;
-  color: #470938;
+.main-nav .ul_second {
+  position: fixed;
+  display: flex;
+  right: 2em;
 }
 
-.tamps {
-  position: absolute;
-  margin: 30% 70%;
-  width: 20%;
+.main-nav .ul_second li {
+  margin-left: 1.5em;
+  font-size: 1.5em;
 
 }
 
-main {
-  background-color: $backgroundcolor;
+.main-nav .ul_second #border {
+  border: 2px solid #ffdf91;
+  padding: 0 15px;
+  align-items: center;
 }
 
-.services h2 {
+
+
+.container {
+
+}
+
+.container .home {
+  //width: 80vw;
+  //height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8em;
+  margin-bottom: 5%;
+
+}
+
+.container .home .image {
+  width: 400px;
+  height: 600px;
+
+}
+
+.content {
+  margin-top: 50px;
+  margin-right: 100px;
   text-align: center;
-  margin-top: 3%;
-  color: $textColor;
-  font-family: $fonth2;
-
+  z-index: 10;
 }
 
-.services .container{
+.third--image {
+
   display: inline;
   //vertical-align: center;
   //padding: 10px;
   margin-left: 17%;
-  margin-top: 10%;
+  margin-top: 15%;
 
 }
 
-.services .logiciel {
+.third--image .logiciel {
   width: 14%;
 
 }
@@ -105,19 +186,30 @@ main {
   width: 28%;
 }
 
-.services p {
-  font-size: 1.5rem;
-  margin: 30px 50px;
-  text-align: center;
-  color: #470938;
+//.centres .container  {
+//
+//  justify-content: center;
+//  //align-items: center;
+//
+//  //width: 100%;
+//  //margin-left: 29%;
+//  //margin-bottom: 5%;
+//  //margin-top: 15%;
+//
+//
+//}
+.happy {
+  width: 30%;
+
 }
 
-.text-ser{
-  text-align: center;
-
+.geek {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 50%;
 }
-
-
 
 .text-centre {
   text-align: center;
@@ -129,102 +221,19 @@ main {
 }
 
 #maCarte {
+  display: block;
   height: 500px;
   width: 700px;
   border: 2px solid black;
-  margin-left: 32%;
-  margin-bottom: 20px;
-
-}
-
-.centre .container img {
-  width: 30%;
-  margin-left: 15%;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
 
 
 }
 
-.happy {
-  width: 30%;
-
-}
-
-.geek {
-  width: 30%;
-}
 
 
 
-.contactgeek img{
-  //justify-content: center;
-  margin-right: 100%;
-  width: 50px;
-}
-
-.contact #container {
-  //margin-top: 25%;
-  padding: 0 30%;
 
 
-}
 
-.contact input {
-  border: solid #ffdf91;
-}
-
-.contact  textarea {
-  border: solid #ffdf91;
-}
-
-
-.contact h2 {
-  font-family: $fonth2;
-  color: $textColor;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 10%;
-}
-
-
-.contact input {
-
-}
-
-footer {
-  background-color: #ffdf91;
-}
- footer .container {
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 0;
-    margin-top: 20px;
-
-
-}
-
- footer i {
-
-   width: 30%;
- }
-
- footer a {
-   color: #f88f01;
-   padding: 10px 3px;
-   top: 10px;
- }
-
- footer p{
-   text-align: center;
-   font-size: 10px;
-   color: #f88f01;
-   padding-bottom: 10px;
- }
-
-footer h5{
-
-  font-size: 10px;
-  color: #f88f01;
-}
