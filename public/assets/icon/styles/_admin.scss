@@ -1,0 +1,23 @@
+.contente {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.contente h2 {
+  margin: 0;
+  padding: 25px 0;
+}
+
+.read .create-centres .creat{
+  display: inline-block;
+  text-decoration: none;
+  background-color: darkgoldenrod;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 15px 0;
+}
+
+.read .pagination {
+  display: flex; !important;
+  justify-content: flex-end; !important;
+}

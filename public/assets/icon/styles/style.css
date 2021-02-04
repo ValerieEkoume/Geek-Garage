@@ -1,17 +1,109 @@
-@import "variables";
-@import "form";
-@import "footer";
+@charset "UTF-8";
+.header .contact-geek {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+  margin-bottom: 2%;
+}
+
+.form {
+  padding: 0 30%;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #ffdf91;
+  padding: 20px 0;
+}
+
+#msg {
+  margin-top: 40px;
+}
+
+::-webkit-input-placeholder {
+  color: #550a46;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+form {
+  margin: 20% 10%;
+}
+
+button {
+  margin-top: 3%;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #ffdf91;
+  letter-spacing: 5px;
+  border-radius: 5px;
+}
+
+.inner-footer {
+  margin: 0;
+  padding: 0;
+  background-color: #ffdf91;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links ul {
+  display: flex;
+  padding: 10px;
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+.social-items {
+  list-style: none;
+}
+
+.social-items a {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #550a46;
+}
+
+.social-items a:hover {
+  color: #b49c73;
+}
+
+.outer-footer {
+  padding: 20px;
+  text-align: center;
+  color: #b49c73;
+  font-size: 18px;
+  background-color: #ffdf91;
+}
 
 body, html {
   height: 100%;
-  background-color: $backgroundcolor;
+  background-color: #b49c73;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .front {
@@ -21,8 +113,6 @@ body, html {
   justify-content: center;
 }
 
-
-
 li {
   list-style: none;
   transition: all 0.4s;
@@ -30,37 +120,32 @@ li {
 
 li:hover {
   transform: scale(1.1);
-
 }
 
 a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffdf91;
-  font-family: 'Concert One', cursive;
-
+  font-family: "Concert One", cursive;
 }
 
 a:hover {
-  color: $textColor;
+  color: #550a46;
 }
 
-
- h2 {
-   color: $textColor;
-   font-family: $fonth2;
-   letter-spacing: 10px;
-   text-align: center;
-   margin-top: 5%;
-
+h2 {
+  color: #550a46;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 5%;
 }
 
 h3 {
   font-size: 40px;
-  color: $textColor;
-  font-family: 'Pacifico', cursive;
+  color: #550a46;
+  font-family: "Pacifico", cursive;
   font-weight: lighter;
-
 }
 
 p {
@@ -68,7 +153,7 @@ p {
   font-size: 20px;
   margin-bottom: 5%;
   color: #470938;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
   padding: 0 30px;
 }
 
@@ -80,16 +165,10 @@ p {
   letter-spacing: 5px;
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(0.97);
   background-color: #f6f4e6;
 }
-
-img {
-  width: 100%;
-}
-
-
 
 #logo {
   border: 2px solid #ffdf91;
@@ -98,21 +177,11 @@ img {
   font-size: 1.7em;
 }
 
-.main-container {
- // width: 100vw;
-  //height: 100vw;
-}
-
-
-
 .main-nav {
   position: fixed;
   display: flex;
   padding: 2em 4em;
-
 }
-
-.home {}
 
 .main-nav .ul_second {
   position: fixed;
@@ -123,7 +192,6 @@ img {
 .main-nav .ul_second li {
   margin-left: 1.5em;
   font-size: 1.5em;
-
 }
 
 .main-nav .ul_second #border {
@@ -132,27 +200,17 @@ img {
   align-items: center;
 }
 
-
-
-.container {
-
-}
-
 .container .home {
-  //width: 80vw;
-  //height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 8em;
   margin-bottom: 5%;
-
 }
 
 .container .home .image {
   width: 400px;
   height: 600px;
-
 }
 
 .content {
@@ -163,44 +221,21 @@ img {
 }
 
 .third--image {
-
   display: inline;
-  //vertical-align: center;
-  //padding: 10px;
   margin-left: 17%;
   margin-top: 15%;
-
 }
 
 .third--image .logiciel {
   width: 14%;
-
 }
 
 .services .phone {
   width: 30%;
-
 }
 
 .services .maint {
   width: 28%;
-}
-
-//.centres .container  {
-//
-//  justify-content: center;
-//  //align-items: center;
-//
-//  //width: 100%;
-//  //margin-left: 29%;
-//  //margin-bottom: 5%;
-//  //margin-top: 15%;
-//
-//
-//}
-.happy {
-  width: 30%;
-
 }
 
 .geek {
@@ -215,9 +250,8 @@ img {
   text-align: center;
   margin-top: 10%;
   padding: 2%;
-  font-family: $fonth2;
-  color: $textColor;
-
+  font-family: "Space Mono", monospace;
+  color: #550a46;
 }
 
 #maCarte {
@@ -227,13 +261,6 @@ img {
   border: 2px solid black;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initiale-scale=1">
     <meta http-equiv="X-UA-compatible" content="ie=edge">
-    <link rel="icon" href="img/istockphoto-666003324-612x612.jpg">
+    <link rel="icon" href="public/assets/icon/img/istockphoto-666003324-612x612.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="public/assets/icon/styles/style.css">
 
     <title>GEEK GARAGE</title>
 </head>
@@ -71,9 +71,9 @@
 
             <h2>NOS SERVICES</h2>
             <div class="image third--image">
-                <img class="logiciel" src="img/logiciel.png" alt="">
-                <img class="phone" src="img/phone_vintage.png" alt="">
-                <img class="maint" src="img/maintenance.png" alt="">
+                <img class="logiciel" src="public/assets/icon/img/logiciel.png" alt="">
+                <img class="phone" src="public/assets/icon/img/phone_vintage.png" alt="">
+                <img class="maint" src="public/assets/icon/img/maintenance.png" alt="">
             </div>
 
             <div class="content">
@@ -93,8 +93,8 @@
         <section id="centres" class="centres">
 
             <div class="container">
-                <img class="happy" src="img/Happy_people.jpg" alt="">
-                <img class="geek" src="img/geek.jpg" alt="">
+                <img class="happy" src="public/assets/icon/img/Happy_people.jpg" alt="">
+                <img class="geek" src="public/assets/icon/img/geek.jpg" alt="">
             </div>
 
             <div class="content">
@@ -111,7 +111,7 @@
         <h2>CONTACTEZ-NOUS</h2>
 
         <div id="contact" class="contact">
-            <img class="contact-geek" src="img/contact-garage.png" alt="">
+            <img class="contact-geek" src="public/assets/icon/img/contact-garage.png" alt="">
             <div class="mb-3">
 
                 <input type="text" class="form-control" id="name" placeholder="Nom">
@@ -158,7 +158,7 @@
 <!--Fichiers Js -->
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-<script src="app.js"></script>
+<script src="public/assets/app.js"></script>
 
 
 

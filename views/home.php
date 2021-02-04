@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initiale-scale=1">
         <meta http-equiv="X-UA-compatible" content="ie=edge">
-        <link rel="icon" href="img/pexels-miguel-á-padriñán-3930094%20(1).jpg">
+        <link rel="icon" href="../assets/icon/img/pexels-miguel-á-padriñán-3930094%20(1).jpg">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
               crossorigin="anonymous">
@@ -17,9 +19,9 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
 
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="../assets/icon/styles/style.css">
 
-        <title>GEEK GARAGE</title>
+        <title>REPARE ONLINE GARAGE</title>
     </head>
 
     <body >
@@ -29,15 +31,15 @@
             <nav class="main-nav">
                 <ul class="ul_first">
                     <li id="logo">
-                        <a href="#">GG</a>
+                        <a class="home-logo" href="#home">ROG</a>
                     </li>
 
                 </ul>
 
                 <ul class="ul_second">
-                    <li id="border"><a href="#services">GEEK-SERVICES</a></li>
-                    <li><a href="#centres">GEEK-CENTRES</a></li>
-                    <li><a href="#contact">GEEK-CONTACT</a></li>
+                    <li id="border"><a href="#services">SERVICES</a></li>
+                    <li><a href="#centres">CENTRES</a></li>
+                    <!--li><a href="login.php">GEEK-CONTACT</a></li-->
                 </ul>
                     <!--a class="cta" href="#"><button>Contact</button></a>-->
 
@@ -55,12 +57,12 @@
 
                     <div class="content">
                         <h3>Bienvenue sur</h3>
-                        <h2>GEEK GARAGE</h2>
+                        <h2 class="fancy">REPARE ONLINE GARAGE</h2>
                         <p>
-                            Pour tous les petis bobos de votre matériel informatique
-                        </p>
+Pour tous les petis bobos de votre matériel informatique
+</p>
 
-                        <a href="#contact" class="btn">Contactez-nous</a>
+                        <a href="login.php" class="btn">Contactez-nous</a>
                     </div>
                     </div>
                 </section>
@@ -69,9 +71,9 @@
 
                     <h2>GEEK-SERVICES</h2>
                    <div class="image third--image">
-                       <img class="logiciel" src="img/logiciel.png" alt="">
-                       <img class="phone" src="img/phone_vintage.png" alt="">
-                       <img class="maint" src="img/maintenance.png" alt="">
+                       <img class="logiciel" src="../assets/icon/img/logiciel.png" alt="">
+                       <img class="phone" src="../assets/icon/img/phone_vintage.png" alt="">
+                       <img class="maint" src="../assets/icon/img/maintenance.png" alt="">
                    </div>
 
                     <div class="content">
@@ -81,7 +83,7 @@
                            maintenance préventive et ou curative sur vos appareils.<br> Nous sommes à votre
                            écoute.</p>
 
-                           <a href="#contact" class="btn">Contactez-nous</a>
+                           <a href="login.php" class="btn">Contactez-nous</a>
                     </div>
 
                 </section>
@@ -92,7 +94,7 @@
 
                     <div class="container">
                         <!--img class="happy" src="img/Happy_people.jpg" alt=""-->
-                        <img class="geek" src="img/geek.jpg" alt="">
+                        <img class="geek" src="../assets/icon/img/geek.jpg" alt="">
                     </div>
 
                     <div class="content">
@@ -115,13 +117,13 @@
 
 
             <div class="header">
-                    <h2>GEEK-CONTACT</h2>
-                <img class="contact-geek" src="img/contact-garage.png" alt="">
+                    <h2>CONTACT</h2>
+                <img class="contact-geek" src="../assets/icon/img/contact-garage.png" alt="">
                     <P>
-                       Pour prendre rendez-vous n'hésitez pas à nous envoyer un message <br>
+Pour prendre rendez-vous n'hésitez pas à nous envoyer un message <br>
 
                     </P>
-        <section id="contact" class="contact">
+        <!--section id="contact" class="contact">
                 <div class="form">
                     <form action="#">
                     <input type="text" placeholder="Nom" />
@@ -130,7 +132,7 @@
                         <button type="button">Envoyez</button>
                     </form>
                 </div>
-        </section>
+        </section-->
 
 
 
@@ -159,10 +161,8 @@
     <!--Fichiers Js -->
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-    <script src="app.js"></script>
+    <script src="../assets/app.js"></script>
 
 
 
 </html>
-
-

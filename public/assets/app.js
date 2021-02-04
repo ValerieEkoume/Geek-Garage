@@ -1,4 +1,7 @@
 
+
+
+
 var villes = {
     "Gray": { "lat": 47.45, "lon": 5.5833},
     "Vienne": { "lat": 45.5167, "lon": 4.8667},
@@ -48,9 +51,36 @@ carte.fitBounds(groupe.getBounds().pad(0.5));
 
 carte.addLayer(marqueurs);
 
+//ANIMATION DE TEXT
 
-
-
+// const text = document.querySelector(".home .content .fancy")
+// const strText = text.textContent;
+// const splitText = strText.split("")
+//
+// console.log(splitText);
+//
+// for(let i=0; i < splitText.lenght; i++) {
+//
+//     text.innerHTML += "<span>"+ splitText[i] + "</span>";
+// }
+// //
+// // let char = 0;
+// // let timer = setInterval(onTick, 50);
+// //
+// // function onTick(){
+// //     const span =text.querySelector("span")[char];
+// //     span.classList.add("fade");
+// //     char++;
+// //     if (char === splitText.length){
+// //         complete();
+// //
+// //     }
+// // }
+// //
+// // function complete(){
+// //     clearInterval(timer);
+// //     timer = null;
+// // }
 
 
 
