@@ -1,5 +1,5 @@
 <?php
-
+require '../views/header.html';
 //Connection à la BDD
 use App\Connection;
 $pdo = (new Connection())->getPdo();
@@ -47,8 +47,8 @@ $num_centres = $pdo->query('SELECT COUNT(*) FROM centres')->fetchColumn();
 
 <body >
 
-<div class="contente read">
-    <h2>Les Centres</h2>
+<div class="admin">
+    <h2 class="titre">Les Centres</h2>
     <div class="create-centres">
     <a  class="creat" href="/ajouter" >Ajouter un centre</a>
     </div>
@@ -61,6 +61,9 @@ $num_centres = $pdo->query('SELECT COUNT(*) FROM centres')->fetchColumn();
                 <td>Téléphone</td>
                 <td>Latitude</td>
                 <td>Longitude</td>
+                <td>Ouverture</td>
+                <td>Fermeture</td>
+                <td>Créé le</td>
             </tr>
         </thead>
         <tbody>
@@ -72,9 +75,12 @@ $num_centres = $pdo->query('SELECT COUNT(*) FROM centres')->fetchColumn();
                 <td><?=$centre['tel']?></td>
                 <td><?=$centre['latitude']?></td>
                 <td><?=$centre['longitude']?></td>
+                <td><?=$centre['ouverture']?></td>
+                <td><?=$centre['fermeture']?></td>
+                <td><?=$centre['created']?></td>
                 <td class="actions">
                     <a href="/update?id=<?=$centre['id']?>" class="edit"><i class="fas fa-user-edit"></i></a>
-                    <a href="/delete?id=<?=$centre['id']?>" class="delete"><i class="fas fa-trash-alt"></i></a>
+                    <a href="/delete?id=<?=$centre['id']?>" class="trash"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>
         <?php endforeach;?>

@@ -1,12 +1,7 @@
 <?php
-
-
-
 use App\Connection;
 $pdo = (new Connection())->getPdo();
 $result = "";
-
-
 
 
 if (isset($_POST['submit'])) {

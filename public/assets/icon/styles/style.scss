@@ -1,6 +1,7 @@
 @import "variables";
 @import "form";
 @import "footer";
+@import "crud";
 
 body, html {
   height: 100%;
@@ -20,9 +21,6 @@ body, html {
 }
 
 
-
-
-
 .front {
   width: 200vm;
   height: 100vh;
@@ -30,99 +28,11 @@ body, html {
   justify-content: center;
 }
 
-
-
-
-li {
-  list-style: none;
-  transition: all 0.4s;
-}
-
-li:hover {
-  transform: scale(1.1);
-
-}
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffdf91;
-  font-family: 'Concert One', cursive;
-
-}
-
-a:hover {
-  color: $textColor;
-}
-
-
-h2 {
-   color: $textColor;
-   font-family: $fonth2;
-   letter-spacing: 10px;
-   text-align: center;
-   margin-top: 5%;
-
-}
-
-h3 {
-  font-size: 40px;
-  color: $textColor;
-  font-family: 'Pacifico', cursive;
-  font-weight: lighter;
-
-}
-
-p {
-  margin-top: 30px;
-  font-size: 20px;
-  margin-bottom: 5%;
-  color: #470938;
-  font-family: 'Concert One', cursive;
-  padding: 0 30px;
-}
-
-.btn {
-  margin-top: 3%;
-  display: inline-block;
-  padding: 10px 30px;
-  background-color: #ffdf91;
-  letter-spacing: 5px;
-}
-
-.btn:hover{
-  transform: scale(0.97);
-  background-color: #f6f4e6;
-}
-
-img {
-  //width: 100%;
-}
-
-
-
-#logo {
-  border: 2px solid #ffdf91;
-  padding: 0 5px;
-  align-items: center;
-  font-size: 1.7em;
-}
-
-.main-container {
- // width: 100vw;
-  //height: 100vw;
-}
-
-
-
 .main-nav {
   position: fixed;
   display: flex;
   padding: 2em 4em;
-
 }
-
-.home {}
 
 .main-nav .ul_second {
   position: fixed;
@@ -142,11 +52,97 @@ img {
   align-items: center;
 }
 
+li {
+  list-style: none;
+  transition: all 0.4s;
+}
 
-
-.container {
+li:hover {
+  transform: scale(1.1);
 
 }
+
+.ul_first .lien {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffdf91;
+  font-family: 'Concert One', cursive;
+
+}
+
+
+a {
+  //text-decoration: none;
+  //text-transform: uppercase;
+  //color: #ffdf91;
+  //font-family: 'Concert One', cursive;
+
+}
+
+a:hover {
+  color: $textColor;
+}
+
+
+.home .fancy {
+   color: $textColor;
+   font-family: $fonth2;
+  font-size: 3rem;
+  font-weight: bolder;
+   letter-spacing: 10px;
+   text-align: center;
+   margin-top: 5%;
+
+}
+
+.home .welcome {
+  font-size: 40px;
+  color: $textColor;
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+
+}
+
+.home .topo {
+  margin-top: 30px;
+  font-size: 30px;
+  margin-bottom: 5%;
+  color: #470938;
+  font-family: 'Concert One', cursive;
+  padding: 0 30px;
+}
+
+#logo_online {
+  width: 50%;
+  padding-left: 5%;
+}
+
+//.btn {
+//  margin-top: 3%;
+//  display: inline-block;
+//  //padding: 10px 30px;
+//  background-color: #ffdf91;
+//  //letter-spacing: 5px;
+//}
+
+.btn:hover{
+  transform: scale(0.97);
+  background-color: #f6f4e6;
+}
+
+
+//#logo {
+//  border: 2px solid #ffdf91;
+//  padding: 0 5px;
+//  align-items: center;
+//  font-size: 1.7em;
+//}
+
+.main-container {
+ // width: 100vw;
+  //height: 100vw;
+}
+
 
 .container .home {
   //width: 80vw;
@@ -165,11 +161,35 @@ img {
 
 }
 
-.content {
-  margin-top: 50px;
-  margin-right: 100px;
+.container .content {
+  margin-top: 35%;
+  margin-left: 50%;
   text-align: center;
   z-index: 10;
+}
+
+.ul_second .lien1 {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffdf91;
+  font-family: 'Concert One', cursive;
+}
+
+.ul_second .lien2 {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffdf91;
+  font-family: 'Concert One', cursive;
+}
+
+.services .titre {
+  color: $textColor;
+  font-family: $fonth2;
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 3%;
 }
 
 .third--image {
@@ -197,34 +217,34 @@ img {
 
 }
 
-//.centres .container  {
-//
-//  justify-content: center;
-//  //align-items: center;
-//
-//  //width: 100%;
-//  //margin-left: 29%;
-//  //margin-bottom: 5%;
-//  //margin-top: 15%;
-//
-//
-//}
+.services .topo {
+  margin-top: 1%;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 2%;
+  color: #470938;
+  font-family: 'Concert One', cursive;
+  padding: 0 30px;
+}
 
 
 .geek {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
-  width: 50%;
+  //margin-top: 1%;
+  width: 40%;
 }
 
-.text-centre {
-  text-align: center;
-  margin-top: 10%;
-  padding: 2%;
-  font-family: $fonth2;
+.centres .titre {
   color: $textColor;
+  font-family: $fonth2;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 1.5%;
 
 }
 
@@ -236,8 +256,40 @@ img {
   margin-left: auto;
   margin-right: auto;
 
+}
+
+.centres .topo {
+  margin-top: 30px;
+  font-size: 25px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #470938;
+  font-family: 'Concert One', cursive;
+  padding: 0 30px;
+}
+
+.header .titre {
+  color: $textColor;
+  font-family: $fonth2;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.header .topo {
+  margin-top: 30px;
+  font-size: 25px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #470938;
+  font-family: 'Concert One', cursive;
+  padding: 0 30px;
 
 }
+
+
 
 
 

@@ -1,0 +1,154 @@
+
+.contente {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.admin .titre {
+  margin: 0;
+  padding: 25px 0;
+  font-size: 22px;
+  border-bottom: 1px solid #ffdf91;
+  color: #470938;
+}
+
+.admin .create-centres {
+  display: inline-block;
+  //background-color: #ffdf91;
+  padding: 10px 15px;
+  margin: 15px 0;
+
+}
+
+.admin .creat {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #470938;
+}
+
+.admin .creat:hover {
+  color: #ffdf91;
+}
+
+.admin .pagination {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.admin .pagination a {
+  display: inline-block;
+  text-decoration: none;
+  //background-color: #a5a7a9;
+  font-weight: bold;
+  color: #470938;
+  padding: 5px 10px;
+  margin: 15px 0 15px 5px;
+}
+
+.admin .pagination a:hover {
+  background-color: #999b9d;
+}
+.admin table {
+  width: 100%;
+  padding-top: 30px;
+  border-collapse: collapse;
+}
+
+.admin table thead {
+  background-color: #470938;
+  border-bottom: 1px solid #470938;
+}
+
+.admin table thead td {
+  padding: 10px;
+  font-weight: bold;
+  color: #ffdf91;
+  font-size: 18px;
+}
+
+.admin table tbody tr {
+  border-bottom: 1px solid #470938;
+
+}
+
+.admin table tbody tr:hover {
+  color: #ffdf91;
+}
+
+.admin table tbody tr td {
+  padding: 10px;
+}
+
+.admin table tbody tr td:nth-child(1) {
+  color: #470938;
+}
+
+.admin table tbody tr td.actions {
+  padding: 8px;
+  text-align: right;
+}
+
+.admin table tbody tr td.actions .edit, .admin table tbody tr td.actions .trash {
+  display: inline-flex;
+  text-align: right;
+  text-decoration: none;
+  color: #470938;
+  padding: 10px 12px;
+}
+
+.admin table tbody tr td.actions .trash {
+  background-color: #ffdf91;
+}
+
+.admin table tbody tr td.actions .trash:hover {
+  background-color: #e7e6e1;
+}
+
+.admin table tbody tr td.actions .edit {
+  background-color: #ffdf91;
+}
+.admin table tbody tr td.actions .edit:hover {
+  background-color: #e7e6e1;
+}
+
+.update form {
+  padding: 15px 0;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.update form label {
+  display: inline-flex;
+  width: 400px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  font-family: "Concert One", cursive;
+  color: #470938;
+  font-size: 20px;
+}
+
+.update form input {
+  padding: 10px;
+  width: 400px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  border: 2px solid #470938;
+}
+
+.update form input[type="submit"] {
+  display: block;
+  background-color: #470938;
+  border: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffdf91;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.update form input[type="submit"]:hover {
+  background-color: #e7e6e1;
+}

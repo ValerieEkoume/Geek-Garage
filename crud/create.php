@@ -4,7 +4,7 @@ use App\Connection;
 $pdo = (new Connection())->getPdo();
 
 $msg = "";
-
+require '../views/header.html';
 // Vérifier que les données POST ne sont pas vide
 
 if (!empty($_POST)) {
@@ -18,11 +18,13 @@ if (!empty($_POST)) {
     $tel = isset($_POST['tel']) ? $_POST['tel'] : '';
     $latitude = isset($_POST['latitude']) ? $_POST['latitude'] : '';
     $longitude = isset($_POST['longitude']) ? $_POST['longitude'] : '';
+    $ouverture = isset($_POST['ouverture']) ? $_POST['ouverture'] : '';
+    $fermeture = isset($_POST['fermeture']) ? $_POST['fermeture'] : '';
     $created = isset($_POST['created']) ? $_POST['created'] : date('Y-m-d H:i:s');;
 
     //insert the new record into the centres table
 
-    $sth = $pdo->prepare('INSERT INTO centres VALUES (?, ?, ?, ?, ?, ?, ?)');
+    $sth = $pdo->prepare('INSERT INTO centres VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
     //$sth->execute([$id, $nom_centre, $adresse, $tel, $latitude, $longitude, $created]);
 //    $centres = $sth->fetchAll();
 //    $msg = 'Le centre a bien été créé';
@@ -30,29 +32,7 @@ if (!empty($_POST)) {
 
 }
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initiale-scale=1">
-    <meta http-equiv="X-UA-compatible" content="ie=edge">
-    <link rel="icon" href="../assets/icon/img/pexels-miguel-á-padriñán-3930094%20(1).jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-          crossorigin=""/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=IBM+Plex+Sans:wght@700&family=Pacifico&family=Space+Mono&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/31cfd28a45.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
 
-    <link rel="stylesheet" href="../assets/icon/styles/style.css">
-
-    <title>REPARE ONLINE GARAGE</title>
-</head>
 
 <body>
 
@@ -71,7 +51,11 @@ if (!empty($_POST)) {
         <input type="text" name="latitude" placeholder="Latitude"  id="latitude">
         <!--        <label for="tel">longitude</label>-->
         <input type="text" name="Longitude" placeholder="Longitude"  id="Longitude">
+        <input type="text" name="ouverture" placeholder="Horaire d'ouverture"  id="ouverture">
+        <!--        <label for="tel">longitude</label>-->
+        <input type="text" name="fermeture" placeholder="Horaire de fermeture"  id="fermeture">
         <input type="datetime-local" name="created" value="<?=date('Y-m-d\TH:i')?>" id="created">
+
         <input type="submit" value="Créer">
 
         <a href="/geek"><button type="submit" class="retour">retour</button></a>

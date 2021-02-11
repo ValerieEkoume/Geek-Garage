@@ -23,9 +23,6 @@ $router->map('GET|POST', '/geek', function () {
     require __DIR__ . '/../views/espace_admin.php';
 });
 
-$router->map('GET|POST', '/read', function () {
-    require __DIR__ . '/../crud/read.php';
-});
 
 $router->map('GET|POST', '/ajouter', function () {
     require __DIR__ . '/../crud/create.php';
@@ -38,6 +35,23 @@ $router->map('GET|POST', '/update', function () {
 $router->map('GET|POST', '/delete', function () {
     require __DIR__ . '/../crud/delete.php';
 });
+
+$router->map('GET|POST', '/header', function () {
+    require __DIR__ . '/../views/header.html';
+});
+
+$router->map('GET|POST', '/liste', function () {
+    require __DIR__ . '/../agence/Model/liste.php';
+});
+
+$router->map('GET|POST', '/mail', function () {
+    require __DIR__ . '/../views/mail.php';
+});
+
+
+
+
+
 
 
 

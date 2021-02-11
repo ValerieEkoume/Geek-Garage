@@ -7,45 +7,12 @@
   margin-bottom: 2%;
 }
 
-.form {
-  padding: 0 30%;
+.contact-p {
   text-align: center;
 }
 
-p {
+.contact-h {
   text-align: center;
-}
-
-input {
-  width: 100%;
-  margin: 20px 0;
-  background: rgba(0, 0, 0, 0);
-  border: none;
-  border-bottom: 1px solid #ffdf91;
-  padding: 20px 0;
-}
-
-#msg {
-  margin-top: 40px;
-}
-
-::-webkit-input-placeholder {
-  color: #550a46;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-form {
-  margin: 20% 10%;
-}
-
-button {
-  margin-top: 3%;
-  display: inline-block;
-  padding: 10px 30px;
-  background-color: #ffdf91;
-  letter-spacing: 5px;
-  border-radius: 5px;
 }
 
 .inner-footer {
@@ -89,6 +56,157 @@ button {
   background-color: #ffdf91;
 }
 
+.contente {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.admin .titre {
+  margin: 0;
+  padding: 25px 0;
+  font-size: 22px;
+  border-bottom: 1px solid #ffdf91;
+  color: #470938;
+}
+
+.admin .create-centres {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 15px 0;
+}
+
+.admin .creat {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #470938;
+}
+
+.admin .creat:hover {
+  color: #ffdf91;
+}
+
+.admin .pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin .pagination a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #470938;
+  padding: 5px 10px;
+  margin: 15px 0 15px 5px;
+}
+
+.admin .pagination a:hover {
+  background-color: #999b9d;
+}
+
+.admin table {
+  width: 100%;
+  padding-top: 30px;
+  border-collapse: collapse;
+}
+
+.admin table thead {
+  background-color: #470938;
+  border-bottom: 1px solid #470938;
+}
+
+.admin table thead td {
+  padding: 10px;
+  font-weight: bold;
+  color: #ffdf91;
+  font-size: 18px;
+}
+
+.admin table tbody tr {
+  border-bottom: 1px solid #470938;
+}
+
+.admin table tbody tr:hover {
+  color: #ffdf91;
+}
+
+.admin table tbody tr td {
+  padding: 10px;
+}
+
+.admin table tbody tr td:nth-child(1) {
+  color: #470938;
+}
+
+.admin table tbody tr td.actions {
+  padding: 8px;
+  text-align: right;
+}
+
+.admin table tbody tr td.actions .edit, .admin table tbody tr td.actions .trash {
+  display: inline-flex;
+  text-align: right;
+  text-decoration: none;
+  color: #470938;
+  padding: 10px 12px;
+}
+
+.admin table tbody tr td.actions .trash {
+  background-color: #ffdf91;
+}
+
+.admin table tbody tr td.actions .trash:hover {
+  background-color: #e7e6e1;
+}
+
+.admin table tbody tr td.actions .edit {
+  background-color: #ffdf91;
+}
+
+.admin table tbody tr td.actions .edit:hover {
+  background-color: #e7e6e1;
+}
+
+.update form {
+  padding: 15px 0;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.update form label {
+  display: inline-flex;
+  width: 400px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  font-family: "Concert One", cursive;
+  color: #470938;
+  font-size: 20px;
+}
+
+.update form input {
+  padding: 10px;
+  width: 400px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  border: 2px solid #470938;
+}
+
+.update form input[type=submit] {
+  display: block;
+  background-color: #470938;
+  border: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffdf91;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.update form input[type=submit]:hover {
+  background-color: #e7e6e1;
+}
+
 body, html {
   height: 100%;
   background-color: #b49c73;
@@ -111,70 +229,6 @@ body, html {
   height: 100vh;
   background: url("../img/pexels-miguel-á-padriñán-3930094 (1).jpg");
   justify-content: center;
-}
-
-li {
-  list-style: none;
-  transition: all 0.4s;
-}
-
-li:hover {
-  transform: scale(1.1);
-}
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffdf91;
-  font-family: "Concert One", cursive;
-}
-
-a:hover {
-  color: #550a46;
-}
-
-h2 {
-  color: #550a46;
-  font-family: "Space Mono", monospace;
-  letter-spacing: 10px;
-  text-align: center;
-  margin-top: 5%;
-}
-
-h3 {
-  font-size: 40px;
-  color: #550a46;
-  font-family: "Pacifico", cursive;
-  font-weight: lighter;
-}
-
-p {
-  margin-top: 30px;
-  font-size: 20px;
-  margin-bottom: 5%;
-  color: #470938;
-  font-family: "Concert One", cursive;
-  padding: 0 30px;
-}
-
-.btn {
-  margin-top: 3%;
-  display: inline-block;
-  padding: 10px 30px;
-  background-color: #ffdf91;
-  letter-spacing: 5px;
-}
-
-.btn:hover {
-  transform: scale(0.97);
-  background-color: #f6f4e6;
-}
-
-#logo {
-  border: 2px solid #ffdf91;
-  padding: 0 5px;
-  align-items: center;
-  font-size: 1.7em;
 }
 
 .main-nav {
@@ -200,6 +254,62 @@ p {
   align-items: center;
 }
 
+li {
+  list-style: none;
+  transition: all 0.4s;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+.ul_first .lien {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffdf91;
+  font-family: "Concert One", cursive;
+}
+
+a:hover {
+  color: #550a46;
+}
+
+.home .fancy {
+  color: #550a46;
+  font-family: "Space Mono", monospace;
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.home .welcome {
+  font-size: 40px;
+  color: #550a46;
+  font-family: "Pacifico", cursive;
+  font-weight: lighter;
+}
+
+.home .topo {
+  margin-top: 30px;
+  font-size: 30px;
+  margin-bottom: 5%;
+  color: #470938;
+  font-family: "Concert One", cursive;
+  padding: 0 30px;
+}
+
+#logo_online {
+  width: 50%;
+  padding-left: 5%;
+}
+
+.btn:hover {
+  transform: scale(0.97);
+  background-color: #f6f4e6;
+}
+
 .container .home {
   display: flex;
   justify-content: space-between;
@@ -213,11 +323,35 @@ p {
   height: 600px;
 }
 
-.content {
-  margin-top: 50px;
-  margin-right: 100px;
+.container .content {
+  margin-top: 35%;
+  margin-left: 50%;
   text-align: center;
   z-index: 10;
+}
+
+.ul_second .lien1 {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffdf91;
+  font-family: "Concert One", cursive;
+}
+
+.ul_second .lien2 {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffdf91;
+  font-family: "Concert One", cursive;
+}
+
+.services .titre {
+  color: #550a46;
+  font-family: "Space Mono", monospace;
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 3%;
 }
 
 .third--image {
@@ -238,20 +372,32 @@ p {
   width: 28%;
 }
 
+.services .topo {
+  margin-top: 1%;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 2%;
+  color: #470938;
+  font-family: "Concert One", cursive;
+  padding: 0 30px;
+}
+
 .geek {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
-  width: 50%;
+  width: 40%;
 }
 
-.text-centre {
-  text-align: center;
-  margin-top: 10%;
-  padding: 2%;
-  font-family: "Space Mono", monospace;
+.centres .titre {
   color: #550a46;
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 1.5%;
 }
 
 #maCarte {
@@ -261,6 +407,36 @@ p {
   border: 2px solid black;
   margin-left: auto;
   margin-right: auto;
+}
+
+.centres .topo {
+  margin-top: 30px;
+  font-size: 25px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #470938;
+  font-family: "Concert One", cursive;
+  padding: 0 30px;
+}
+
+.header .titre {
+  color: #550a46;
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.header .topo {
+  margin-top: 30px;
+  font-size: 25px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #470938;
+  font-family: "Concert One", cursive;
+  padding: 0 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

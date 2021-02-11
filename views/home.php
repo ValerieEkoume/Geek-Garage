@@ -30,15 +30,18 @@
             <section class="front">
             <nav class="main-nav">
                 <ul class="ul_first">
-                    <li id="logo">
-                        <a class="home-logo" href="#home">ROG</a>
+<!--                    <li id="logo">-->
+<!--                        <a class="home-logo" href="#home">ROG</a>-->
+<!--                    </li>-->
+                    <li >
+                        <a class="lien" href="#home"><img class="logo_online" src="../assets/icon/img/online_logo.jpg" id="logo_online" alt=""></a>
                     </li>
 
                 </ul>
 
                 <ul class="ul_second">
-                    <li id="border"><a href="#services">SERVICES</a></li>
-                    <li><a href="#centres">CENTRES</a></li>
+                    <li id="border"><a class="lien1" href="#services">SERVICES</a></li>
+                    <li><a class="lien2" href="#centres">CENTRES</a></li>
                     <!--li><a href="login.php">GEEK-CONTACT</a></li-->
                 </ul>
                     <!--a class="cta" href="#"><button>Contact</button></a>-->
@@ -51,25 +54,23 @@
                     <div class="bien">
                 <section id="home" class="home">
 
-                    <div class="image">
-                        <!--img src="img/robot.jpg" alt=""-->
-                    </div>
 
                     <div class="content">
-                        <h3>Bienvenue sur</h3>
+                        <h3 class="welcome">Bienvenue sur</h3>
                         <h2 class="fancy">REPARE ONLINE GARAGE</h2>
-                        <p>
-Pour tous les petis bobos de votre matériel informatique
-</p>
+                        <p class="topo">
+                        Pour tous les petits bobos de votre matériel informatique
+                        </p>
+<!--                        <img class="logo_online" src="../assets/icon/img/online_logo.jpg" id="logo_online" alt="">-->
 
-                        <a href="login.php" class="btn">Contactez-nous</a>
+<!--                        <a href="login.php" class="btn">Contactez-nous</a>-->
                     </div>
                     </div>
                 </section>
 
                 <section id="services" class="services">
 
-                    <h2>GEEK-SERVICES</h2>
+                    <h2 class="titre">NOS SERVICES</h2>
                    <div class="image third--image">
                        <img class="logiciel" src="../assets/icon/img/logiciel.png" alt="">
                        <img class="phone" src="../assets/icon/img/phone_vintage.png" alt="">
@@ -78,12 +79,10 @@ Pour tous les petis bobos de votre matériel informatique
 
                     <div class="content">
 
-                           <p>Vous rencontrez des difficultés à gérer votre ordinateur ? Vous êtes au
+                           <p class="topo">Vous rencontrez des difficultés à gérer votre ordinateur ? Vous êtes au
                            bon endroit ! <br> Geek Garage effectue vos installations de logiciels, de la
                            maintenance préventive et ou curative sur vos appareils.<br> Nous sommes à votre
                            écoute.</p>
-
-                           <a href="login.php" class="btn">Contactez-nous</a>
                     </div>
 
                 </section>
@@ -93,18 +92,18 @@ Pour tous les petis bobos de votre matériel informatique
                 <section id="centres" class="centres">
 
                     <div class="container">
-                        <!--img class="happy" src="img/Happy_people.jpg" alt=""-->
+
                         <img class="geek" src="../assets/icon/img/geek.jpg" alt="">
                     </div>
 
                     <div class="content">
-                        <h2 class="text-centre">GEEK-CENTRE</h2>
+                        <h2 class="titre">NOS CENTRES</h2>
                     </div>
 
                     <div id="maCarte"></div>
                     <div class="content">
 
-                        <p>Vous rencontrez des difficultés à gérer votre ordinateur ? Vous êtes au
+                        <p class="topo">Vous rencontrez des difficultés à gérer votre ordinateur ? Vous êtes au
                             bon endroit ! <br> Geek Garage effectue vos installations de logiciels, de la
                             maintenance préventive et ou curative sur vos appareils.<br> Nous sommes à votre
                             écoute.</p>
@@ -117,26 +116,64 @@ Pour tous les petis bobos de votre matériel informatique
 
 
             <div class="header">
-                    <h2>CONTACT</h2>
-                <img class="contact-geek" src="../assets/icon/img/contact-garage.png" alt="">
-                    <P>
-Pour prendre rendez-vous n'hésitez pas à nous envoyer un message <br>
-
+                    <h2 class="titre">CONTACT</h2>
+                <img class="contact-geek" src="../assets/icon/img/contact-garage.png"  alt="">
+                    <P class="topo">
+                    Pour prendre rendez-vous n'hésitez pas à nous envoyer un message en cliquant sur la carte.<br>
                     </P>
-        <!--section id="contact" class="contact">
-                <div class="form">
-                    <form action="#">
-                    <input type="text" placeholder="Nom" />
-                    <input type="text" placeholder="Email" />
-                    <input type="email" id="msg" placeholder="Dites-nous tout..." />
-                        <button type="button">Envoyez</button>
-                    </form>
+
+</div>
+
+
+        <!-- Modal -->
+        <div class="contain_modal">
+            <?php if ( isset($_GET['success']) && $_GET['success'] == true): echo $msg = "<div class='alert alert-success 
+        alert-dismissible fade show my-3' role='alert'>
+        <strong>Votre message a été envoyé avec succès!</strong> Nous sommes déjà en train de le lire.
+         <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>     
+    </div>" ?>
+            <?php  endif  ?>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+                        </div>
+                        <div style="margin-left: 10px" class="modal-body">
+                            <form class="w-100" method="post" action="/mail">
+                                <div class="form-group pt-3" class="msgError form-group" onsubmit="return validateForm()" method="POST">
+                                    <input type="email" required class="form-control"  id="exampleInputEmail1"
+                                           aria-describedby="emailHelp" placeholder="Adresse Email" name="email">
+                                </div>
+                                <div class="form-group pt-3">
+                                    <input type="text" pattern="^[a-zA-Z" required class="form-control" id="exampleInputPassword1"
+                                           placeholder="Nom, Prénom, Raison social" name="name"<span class="error" id="errorname"></span><br>
+                                    <span title="Veuillez entrer uniquement des lettres"></span>
+                                </div>
+                                <div class="form-group pt-3">
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                           placeholder="Adresse" name="adresse">
+                                </div>
+                                <div class="form-group pt-3">
+                                    <input required type="text"  class="form-control" id="exampleInputPassword1"
+                                           placeholder="Numéro de téléphone" name="tel">
+                                </div>
+                                <div class="input-group pt-3">
+                                    <textarea required class="form-control"  aria-label="With textarea"
+                                              placeholder="Explication de votre problème" name="message"></textarea>
+                                </div>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+
+                    </div>
                 </div>
-        </section-->
-
-
-
-
+            </div>
+        </div>
 
     </body>
 
@@ -162,6 +199,8 @@ Pour prendre rendez-vous n'hésitez pas à nous envoyer un message <br>
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <script src="../assets/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
 
 
